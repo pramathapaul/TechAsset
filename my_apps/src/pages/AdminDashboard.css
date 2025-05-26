@@ -1,0 +1,106 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.technician-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.technician-card:hover {
+  transform: translateY(-5px);
+}
+
+.technician-card h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.technician-card p {
+  color: #444;
+  margin: 0.3rem 0;
+}
+
+.service-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.service-list li {
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.dark-mode .technician-card {
+  background: #333;
+  color: #f2f2f2;
+}
+
+.dark-mode .technician-card h3 {
+  color: #66ccff;
+}
+
+.dark-mode .service-list li {
+  color: #ddd;
+}
+
+
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.search-input{
+  flex: 0 1 70%; 
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search-button{
+  padding: 0.9rem;
+  flex: 0 1 30%; 
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#search-button {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #495057;
+}
+
+
+

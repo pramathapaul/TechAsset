@@ -1,0 +1,64 @@
+.technician-register-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .technician-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .technician-form input,
+  .technician-form select {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .technician-form button {
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .technician-form button:hover {
+    background-color: #0056b3;
+  }
+  .service-cost {
+    background: #e0f7fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .service-cost ul {
+    padding-left: 1.5rem;
+  }
+  
+  .service-cost strong {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .service-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .service-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  

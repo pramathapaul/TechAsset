@@ -1,0 +1,93 @@
+/* Container for the gallery */
+.gallery-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Title of the gallery */
+  .gallery-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+    font-weight: 700;
+  }
+  
+  /* Subtitle for the gallery */
+  .gallery-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+    font-weight: 500;
+  }
+  
+  /* Grid container for the images */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    padding: 0;
+    justify-items: center;
+  }
+  
+  /* Each item within the gallery grid */
+  .gallery-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover effect on gallery items */
+  .gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the images */
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the images maintain their aspect ratio */
+  }
+  
+  /* Caption for each image */
+  .image-caption {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  /* Optional: Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .gallery-title {
+      font-size: 2rem;
+    }
+  
+    .gallery-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Slightly smaller images on mobile */
+    }
+  }
+  
+  /* Optional: Animation styles */
+  [data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  [data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
